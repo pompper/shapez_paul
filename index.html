@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shapez</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap&family=Inria+Sans&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" id="style" href="style-lm.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="col-1">
+                 
+            </div>
+            <div class="col-2">
+                <img src="img/logo.png" width="300px" id="logo">
+            </div>
+            <div class="col-3">
+                <img src="img/light_mode_button.png" id="mode" onclick="toggleMode()" width="40px">
+                <img src="img/hamberger_menu.png" id="menu" width="40px">
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <h1>
+                <span>Component</span>
+            </h1>
+        </div>
+    </section>
+    <section class="container">
+        <div class="test1">
+            basic shapez
+        </div>
+        <div class="test2">
+            complex shapez
+        </div>
+    </section>
+    <div class="container">
+<section class="desc">
+        <div class="shapez">
+            <h3> <br>shapez code</h3>
+            <p> S: Square <br> C : Circle <br> S : Star <br>  W : Windmill</p>
+        </div>
+        <div class="color"> <br> <h3 >color code</h3>
+            <table id="desktop">
+                <tr>
+                    <td>r</td>
+                    <td>
+                        <div class="circle red"></div>
+                    </td>
+                    <td class="colorname">Red</td>
+                    <td>p</td>
+                    <td>
+                        <div class="circle purple"></div>
+                    </td>
+                    <td class="colorname">Purple</td>
+                </tr>
+                <tr>
+                    <td>g</td>
+                    <td>
+                        <div class="circle green"></div>
+                    </td>
+                    <td class="colorname">Green</td>
+                    <td>c</td>
+                    <td>
+                        <div class="circle cyan"></div>
+                    </td>
+                    <td class="colorname">Cyan</td>
+                </tr>
+                <tr>
+                    <td>b</td>
+                    <td>
+                        <div class="circle blue"></div>
+                    </td>
+                    <td class="colorname">Blue</td>
+                    <td>u</td>
+                    <td>
+                        <div class="circle uncolor"></div>
+                    </td>
+                    <td class="colorname">Uncolored</td>
+                </tr>
+                <tr>
+                    <td>y</td>
+                    <td>
+                        <div class="circle yellow"></div>
+                    </td>
+                    <td class="colorname">Yellow </td>
+                    <td>w</td>
+                    <td>
+                        <div class="circle white"></div>
+                    </td>
+                    <td class="colorname">White</td>
+                </tr>
+            </table>
+
+            <table id="mobile">
+                <tr>
+                    <td>r</td>
+                    <td>
+                        <div class="circle red"></div>
+                    </td>
+                    <td class="colorname">Red</td>
+                </tr>
+                    <tr>
+                    <td>p</td>
+                    <td>
+                        <div class="circle purple"></div>
+                    </td>
+                    <td class="colorname">Purple</td>
+                </tr>
+                <tr>
+                    <td>g</td>
+                    <td>
+                        <div class="circle green"></div>
+                    </td>
+                    <td class="colorname">Green</td>
+                </tr>
+                    <tr>
+                        <td>c</td>
+                        <td>
+                            <div class="circle cyan"></div>
+                        </td>
+                        <td class="colorname">Cyan</td>
+                    </tr>
+                <tr>
+                    <td>b</td>
+                    <td>
+                        <div class="circle blue"></div>
+                    </td>
+                
+                    <td class="colorname">Blue</td>
+                </tr>
+                    <tr>
+                    <td>u</td>
+                    <td>
+                        <div class="circle uncolor"></div>
+                    </td>
+                    <td class="colorname">Uncolored</td>
+                </tr>
+                
+                <tr>
+                    <td>y</td>
+                    <td>
+                        <div class="circle yellow"></div>
+                    </td>
+                    <td class="colorname">Yellow </td>
+                </tr>
+                    <tr>
+                    <td>w</td>
+                    <td>
+                        <div class="circle white"></div>
+                    </td>
+                    <td class="colorname">White</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section>
+        <div class="sm-container">
+            <div class="container">
+                <h1 class="basic">
+                    <span>Basic</span>
+                </h1>
+            </div>
+            
+
+            <div class="shape-wrap">
+                <div>
+                    <img src="img/basic/circle.png"> 
+                    <p>Circle</p>
+                </div>
+                <div>
+                    <img src="img/basic/square.png"> 
+                    <p>Square</p>
+                </div>
+                <div>
+                    <img src="img/basic/star.png">
+                    <p>Star</p>
+                </div>
+                <div>
+                    <img src="img/basic/windmill.png">
+                    <p>Windmill</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <section id="shape-complex">
+        <div class="sm-container">
+            <div class="container">
+                <h1 class="complex">
+                    <span>Complex</span>
+                </h1>
+            </div>
+
+
+            <div class="shape-wrap">
+                <div>
+                    <img src="img/complex/cr.png"> 
+                    <p>C + R<br><br></p>
+                </div>
+                <div>
+                    <img src="img/complex/sw.png"> 
+                    <p>S + W<br><br></p>
+                </div>
+                <div>
+                    <img src="img/complex/swcr.png">
+                    <p>S + W + C + R<br><br></p>
+                </div>
+                <div >
+                    <img src="img/complex/crswrswc.png">
+                    <p>C + R + S + W + R + S + W + C</p>
+                </div>
+            </div>
+            <div class="shape-wrap">
+                <div>
+                    <img src="img/complex/ccc.png"> 
+                    <p>C x 3<br><br></p>
+                </div>
+                <div>
+                    <img src="img/complex/rrr.png"> 
+                    <p>R x 3<br><br></p>
+                </div>
+                <div>
+                    <img src="img/complex/crsw.png">
+                    <p>C + R + S + W<br><br></p>
+                </div>
+                <div>
+                    <img src="img/complex/crswrswcswcrwcrs.png">
+                    <p>C + R + S + W x 4</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="shape-building">
+        <div class="sm-container">
+            <h1 class="building"><span>buiding</span></h1>
+        <div style="margin-bottom: 20px;" class="shape-wrap">
+            <div>
+                <img style="margin-bottom: 8px; margin-top:20px" src="img/building/cutter.png">
+                <p>cutter</p>
+            </div>
+            <div>
+                <img class="sq-img" src="img/building/trash.png">
+                <p>trash</p>
+            </div>
+            <div>
+                <img class="sq-img" src="img/building/rotator.png">
+                <p>rotator</p>
+            </div>
+            <div>
+                <img class="sq-img" src="img/building/display.png">
+                <p>display</p>
+            </div>
+        </div>
+        <div class="shape-wrap">
+            <div>
+                <img src="img/building/color-mixer.png">
+                <p>color-mixer</p>
+            </div>
+            <div>
+                <img src="img/building/stacker.png">
+                <p>stacker</p>
+            </div>
+            <div>
+                <img src="img/building/filter.png">
+                <p>filter</p>
+            </div>
+            <div>
+                <img src="img/building/painter.png">
+                <p>painter</p>
+            </div>
+        </div>
+       
+
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="col-1">
+                <img src="img/logo.png" width="300px" id="logo2">
+                <p>Designed by Paul</p>
+            </div>
+            <div class="col-2">
+                <h3>Building</h3>
+                -Cutter <br>
+                -Trash <br>
+                -Rotator
+            </div>
+            <div class="col-3">
+                <h3>Components</h3>
+                -Basic shapez <br>
+                -Complex shapez <br>
+            </div>
+        </div>
+    </footer>
+    <script src="function.js"></script>
+</body>
+
+</html>

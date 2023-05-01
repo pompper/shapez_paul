@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #3F4851;
+}
+header {
+    text-align: center;
+    background: #828384;
+    padding: 16px;
+    overflow: auto;
+}
+
+footer {
+    margin-top:100px;
+    text-align: left;
+    background: #6C6B6B;
+    padding: 16px;
+    overflow: auto;
+    font-family: "Asap";
+    color: #FFFFFF;
+}
+
+.col-1,
+.col-2,
+.col-3 {
+    width: 33%;
+    float: left;
+}
+
+.col-2 {
+    text-align: center;
+}
+footer .col-2,footer .col-3 {
+    text-align: left;
+}
+
+.col-3 {
+    text-align: right;
+    /* padding-top: 12px; */
+}
+
+.test1,.test2 {
+    padding: 70px 0px;
+    background-color: #828384;
+    border-radius: 10px;
+    width: 48%;
+    float: left;
+    font-family: 'Inria Sans';
+    text-align: center;
+    font-size: 50px;
+    color: #FFFFFF;
+}
+
+
+.test2 {
+    float: right;
+
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: auto;
+}
+
+.desc {
+    margin: 50px auto;
+    background-color: #828384;
+    border-radius: 10px;
+    max-width: 1000px;
+    /* height: 300px; */
+    font-family: 'Inria Sans';
+    text-align: center;
+    font-size: 50px;
+    border: 5px dashed #FFFFFF;
+    overflow: auto;
+    padding-bottom: 70px;
+}
+
+.shapez,
+.color {
+    float: left;
+    width: 50%;
+    font-size: 40px;
+
+}
+
+.color>h3, .shapez>h3 {
+    font-size: 0.9em;
+    color: #FFFFFF;
+}
+
+.color > h3 {
+    margin-left: -90px;
+}
+
+.color>table, .shapez>p {
+    font-size: 0.7em
+}
+
+.circle {width: 25px; height: 25px; border-radius: 50%;border: 1px solid #1a1a1a; margin-left: 26px;}
+.circle.red{background: #FF666A;}
+.circle.purple{background: #DD66FF;}
+.circle.green{background: #78FF66;}
+.circle.cyan{background: #00FCFF;}
+.circle.blue{background: #66A7FF;}
+.circle.uncolor{background: #AAAAAA;}
+.circle.yellow{background: #FCF52A;}
+.circle.white{background: #FFFFFF;}
+
+.colorname {text-align: left; min-width: 100px; }
+.colorname:nth-child(even) {border: none;}
+
+table{
+    width: 100%; text-align: center; margin: auto; border-collapse: collapse;
+}
+table tr {
+    color: #FFFFFF;
+}
+table#mobile{display: none; margin-left: 5%;}
+
+table#mobile tr{height: 40px;}
+
+#shape-complex p,#shape-building p {font-size: 0.7em;}
+
+#mode{
+    cursor: pointer;
+}
+
+/* ------------------------------ */
+h1 {
+    font-family: 'Inria Sans';
+    margin: 50px auto;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 30px;
+    max-width: 900px;
+    position: relative;
+}
+
+h1 span{
+    background: #3F4851;
+    padding: 0px 15px;
+    z-index: 5;
+    position: relative;
+}
+
+h1:before {
+    content: "";
+    display: block;
+    width: 350px;
+    height: 5px;
+    background: #FFFFFF;
+    left: 0;
+    top: 50%;
+    position: absolute;
+}
+
+h1:after {
+    content: "";
+    display: block;
+    width: 350px;
+    height: 5px;
+    background: #FFFFFF;
+    right: 0;
+    top: 50%;
+    position: absolute;
+}
+
+p {
+    font-family: 'Asap';
+    color: #FFFFFF;
+}
+
+h1.basic::before, h1.basic::after{
+    width: 240px;
+}
+
+h1.complex::before, h1.complex::after{
+    width: 200px;
+}
+
+h1.building::before, h1.building::after{
+    width: 200px;
+}
+.sm-container{max-width: 600px; margin: auto;}
+
+.shape-wrap {display: flex; font-weight: bold; font-size: 1.5em; align-items: center;}
+.shape-wrap div {width: 25%; text-align: center; padding: 5px; }
+.shape-wrap div img {width: 100%;}
+
+.complex + .shape-wrap p,.complex + .shape-wrap + .shape-wrap p {
+    font-size: 0.7em;
+}
+
+.sq-img {max-width: 100px ;}
